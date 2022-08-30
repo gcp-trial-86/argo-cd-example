@@ -12,7 +12,7 @@ spec:
     targetRevision: HEAD
     path: manifests/nginx
   destination:
-    server: https://34.139.93.118
+    server: https://34.138.194.123
     namespace: default
   syncPolicy:
     automated:
