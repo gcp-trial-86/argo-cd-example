@@ -15,5 +15,5 @@ variable "region" {
 variable "location" {
   type        = string
   description = "cluster location"
-  default     = "us-east-1b"
+  default     = "us-east1-b"
 }
