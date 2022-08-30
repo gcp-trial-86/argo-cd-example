@@ -9,11 +9,11 @@ variable "cluster_name" {
 variable "region" {
   type = string
   description = "cluster region"
-  default = "us-central1"
+  default = "us-east1"
 }
 
 variable "location" {
   type        = string
   description = "cluster location"
-  default     = "us-central1-a"
+  default     = "us-east-1b"
 }
