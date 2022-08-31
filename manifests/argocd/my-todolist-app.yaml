@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-todolist
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/gcp-trial-86/argo-cd-example.git
+    targetRevision: HEAD
+    path: manifests/todolist
+  destination:
+    server: https://34.138.194.123
+    namespace: default
+  syncPolicy:
+    automated:
+      selfHeal: true
