@@ -1,0 +1,1 @@
+env="https://kubernetes.default.svc"

@@ -7,6 +7,7 @@ terraform {
     }
   }
   backend "gcs" {
+    # Unable to use vars, see https://github.com/hashicorp/terraform/issues/13022
     bucket = "terraform-backend-<project-id>"
     prefix = "argocd-terraform"
   }
