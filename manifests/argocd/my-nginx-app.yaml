@@ -12,7 +12,7 @@ spec:
     targetRevision: HEAD
     path: manifests/nginx
   destination:
-    server: gke_gke-cicd-arctiq_us-east1_gke-cicd-arctiq-gke
+    server: https://34.138.194.123
     namespace: default
   syncPolicy:
     automated:

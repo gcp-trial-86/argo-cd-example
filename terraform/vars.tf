@@ -17,3 +17,9 @@ variable "location" {
   description = "cluster location"
   default     = "us-east1-b"
 }
+
+variable "env" {
+  type        = string
+  description = "Kubernetes Cluster env"
+  default     = "https://kubernetes.default.svc"
+}
