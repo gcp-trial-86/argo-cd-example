@@ -4,7 +4,7 @@ resource "google_service_account" "main" {
 }
 
 resource "google_container_cluster" "main" {
-  name               = "${var.cluster_name}"
+  name               = var.cluster_name
   location           = var.location
   initial_node_count = 2
   node_config {
@@ -20,7 +20,7 @@ resource "google_container_cluster" "main" {
 }
 
 resource "time_sleep" "wait_30_seconds" {
-  depends_on = [google_container_cluster.main]
+  depends_on      = [google_container_cluster.main]
   create_duration = "30s"
 }
 

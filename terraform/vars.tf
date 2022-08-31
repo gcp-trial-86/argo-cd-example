@@ -1,15 +1,15 @@
 variable "project_id" {}
 
 variable "cluster_name" {
-  type      = string
+  type        = string
   description = "cluster name"
-  default   = "k8s-cluster"
+  default     = "k8s-cluster"
 }
 
 variable "region" {
-  type = string
+  type        = string
   description = "cluster region"
-  default = "us-east1"
+  default     = "us-east1"
 }
 
 variable "location" {

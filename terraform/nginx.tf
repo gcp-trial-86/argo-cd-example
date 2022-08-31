@@ -6,7 +6,7 @@ resource "kubectl_manifest" "my-nginx-app" {
   depends_on = [
     kubectl_manifest.argocd,
   ]
-  yaml_body = <<YAML
+  yaml_body          = <<YAML
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
